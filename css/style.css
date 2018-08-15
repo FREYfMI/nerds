@@ -185,6 +185,9 @@ width: 260px;
   display: flex;
   list-style: none;
 }
+.social-icons li{
+  padding: 0 10px;
+}
 .footer-text{
   padding-top:20px; 
   width: 550px;
