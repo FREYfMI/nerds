@@ -2,9 +2,10 @@ body {
     margin: 0;
     padding: 0;
   
-    font-family: 'Roboto', sans-serif;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-size: 18px;
 
-    background-color: azure;
+    background-color: rgb(255, 255, 255);
     background-image: url("../img/bg.jpg");
     background-position: top center;
     background-repeat: no-repeat;
@@ -25,7 +26,9 @@ body {
     align-items: center; 
     justify-content: space-between;
 }
-
+.header{
+  background-color: #eeeeee;
+}
 .main-logo{
   width: 160px;
   height: 106px;
@@ -81,12 +84,10 @@ position: relative;
 }
 .slaider-text h2{
   color: #000000;
-  font-family: Roboto;
   font-size: 55px;
 }
 .slaider-text p{
   color: #283136;
-  font-family: Roboto;
   font-size: 16px;
   padding: 0;
   padding-bottom: 20px;
@@ -99,6 +100,9 @@ width: 700px;
 }
 .features{
   margin-top: 70px;
+  background-image: url(../img/line-block.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 .features-list{
   margin: 0;
@@ -128,7 +132,8 @@ button{
   padding: 12px 40px;
   width: 160px;  
   border: 0;
-  color: #ffffff
+  color: #ffffff;
+  font: inherit;
 }
 .btn-first{
 background-color: #fb565a;
@@ -198,16 +203,46 @@ width: 260px;
   display: flex;
   justify-content: space-between;
   padding: 0 50px;
-  margin-top: 125px;
+  margin-top: 50px;
+  background-image: url(../img/line-block.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
 }
 .img-friend img{
   width: 200px;
   height: 70px;
+
+}
+.img-friend{
+  position: relative;
+}
+.img-friend::after{
+  position: absolute;
+  content: "";
+  top:20%;
+  right: -50px;
+  width: 2px;
+  height: 50px;
+  
+  background-image: url(../img/linevert.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.img-friend:last-child::after{
+
+  
+  background-image: none;
+
 }
 .content-wrap{
   display: flex;
   justify-content: space-between;
-  margin-top: 120px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  background-image: url(../img/line-block.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 .content-text{
 width: 680px;
@@ -260,6 +295,7 @@ margin-bottom: 40px;
   margin: 0;
   margin-top: 40px;
   margin-bottom: 49px;
+  text-transform: uppercase;
 }
 table th{
   color: #000000;
@@ -268,7 +304,7 @@ font-size: 35px;
 text-align: left
 }
 table td{
-  padding-top: 10px;
+  padding-top: 20px;
   color: #283136;
   font-family: Roboto;
   font-size: 16px;
