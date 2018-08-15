@@ -2,8 +2,274 @@ body {
     margin: 0;
     padding: 0;
   
-    background-color: #000000;
+    font-family: 'Roboto', sans-serif;
+
+    background-color: azure;
     background-image: url("../img/bg.jpg");
     background-position: top center;
     background-repeat: no-repeat;
   }
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+  } 
+  .main-navigation-wrapper .container{
+    display: flex;
+    justify-content: center;
+    margin-top:30px;
+  }
+  .main-navigation{
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.main-logo{
+  width: 160px;
+  height: 106px;
+  margin: 0;
+  padding: 0;
+  padding-right: 200px;
+}
+.site-navigation {
+  list-style: none;
+  width: 440px;
+  display: flex;
+  flex-wrap: wrap;
+ }
+ .user-navigation {
+  list-style: none;
+}
+.site-navigation a,
+.user-navigation a {
+    display: block;
+    padding: 25px 20px;
+    vertical-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+.user-navigation .purshare-box{
+padding-left: 75px;
+position: relative;
+}
+.purshare-box::after{
+  content: "";
+
+  position: absolute;
+  top: 28px;
+  left: 24px;
+
+  width: 15px;
+  height: 15px;
+
+  background-image: url(../img/cart-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.main-slaider .container{
+  display: flex;
+  justify-content: space-between;
+
+}
+.slaider-text{
+  width: 390px;
+  color: black;
+}
+.slaider-text h2{
+  color: #000000;
+  font-family: Roboto;
+  font-size: 55px;
+}
+.slaider-text p{
+  color: #283136;
+  font-family: Roboto;
+  font-size: 16px;
+  padding: 0;
+  padding-bottom: 20px;
+}
+.slaider-image{
+width: 700px;
+}
+.btn-slaider{
+  width: 240px;
+}
+.features{
+  margin-top: 70px;
+}
+.features-list{
+  margin: 0;
+  padding: 0;
+display: flex;
+justify-content: space-between;
+  list-style: none;
+}
+.feature-item{
+  width: 300px;
+  margin: 0;
+  margin-bottom: 60px;
+  text-align: center;
+} 
+.feature-item h3{
+  font-size: 16px;
+  text-align: left;
+  position: relative;
+  margin-bottom: 25px;
+}
+.feature-item p{
+  text-align: left;
+  }
+button{
+  display: block;
+  box-sizing: border-box;
+  padding: 12px 40px;
+  width: 160px;  
+  border: 0;
+  color: #ffffff
+}
+.btn-first{
+background-color: #fb565a;
+}
+.btn-second{
+  background-color: #00ca74;
+}
+.btn-third{
+  background-color: #efc84a;
+}
+.btn-write{
+width: 220px;
+}
+
+.map-container{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.map-container img{
+  width: 1440; 
+  height: 416;
+}
+.map-form{
+  position: absolute;
+  background-color: #ffffff;
+  padding: 50px;
+  left: 15%;
+  top: 15%;
+}
+.map-form p{
+  color: #666666;
+}
+
+.footer-main{
+  margin-top: 125px;
+}
+.footer-wrap{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  padding-bottom: 75px;
+}
+.social-icons {
+display: flex;
+width: 260px;
+}
+.social-icons ul{
+  display: flex;
+  list-style: none;
+}
+.footer-text{
+  padding-top:20px; 
+  width: 550px;
+  padding-right: 200px;
+}
+.footer-text h3{
+  font-size: 36px;
+  padding: 0px;
+  margin: 0;
+}
+.footer-text p{
+  font-size: 16px;
+  color: #444444;
+}
+.friends-wrap{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  margin-top: 125px;
+}
+.img-friend img{
+  width: 200px;
+  height: 70px;
+}
+.content-wrap{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 120px;
+}
+.content-text{
+width: 680px;
+}
+.content-text h2{
+  color: #000000;
+font-family: Roboto;
+font-size: 45px;
+margin-bottom: 35px;
+}
+.content-text p{
+  color: #283136;
+font-family: Roboto;
+font-size: 16px;
+margin-bottom: 45px;
+}
+.content-text h3{
+  text-transform: uppercase;
+  color: #283136;
+font-family: Roboto;
+font-size: 16px;
+margin-bottom: 40px;
+}
+.content-text .content-ul{
+  list-style: none;
+}
+.content-text li{
+  margin-bottom: 30px;
+  position: relative;
+}
+.content-text li::before{
+  position: absolute;
+  content: "";
+  top:50%;
+  left: -35px;
+  width: 25px;
+  height: 2px;
+  
+  background-image: url(../img/line.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.content-info{
+  width: 360px;
+}
+.content-info h3{
+  color: #000000;
+  font-family: Roboto;
+  font-size: 16px;
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 49px;
+}
+table th{
+  color: #000000;
+font-family: Roboto;
+font-size: 35px;
+text-align: left
+}
+table td{
+  padding-top: 10px;
+  color: #283136;
+  font-family: Roboto;
+  font-size: 16px;
+}
