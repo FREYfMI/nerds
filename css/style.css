@@ -41,6 +41,8 @@ body {
   width: 440px;
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 1;
+  align-items: center;
  }
  .user-navigation {
   list-style: none;
@@ -95,6 +97,7 @@ position: relative;
 .slaider-image{
 width: 700px;
 }
+
 .btn-slaider{
   width: 240px;
 }
